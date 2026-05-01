@@ -6,24 +6,42 @@ body {
 }
 
 
+/* MODERN NAVBAR */
 nav {
-    background-color: #1f2937;
-    padding: 12px;
+    background: linear-gradient(90deg, #111827, #1f2937);
+    padding: 14px 20px;
     position: sticky;
     top: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
+/* NAV LINKS */
 nav a {
     color: white;
     text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
+/* HOVER EFFECT */
 nav a:hover {
-    color: #38bdf8;
+    background-color: #38bdf8;
+    color: #0f172a;
+    transform: translateY(-2px);
 }
 
+/* ACTIVE FEEL (optional manual class if you want later) */
+nav a.active {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
 
 h1 {
     text-align: center;
